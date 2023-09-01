@@ -1,0 +1,19 @@
+{
+  "name": "bantec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/type-provider-typebox": "^3.5.0",
+    "fastify-plugin": "^4.5.1",
+    "pg": "^8.11.3"
+  }
+}
