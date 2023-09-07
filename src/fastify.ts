@@ -9,5 +9,6 @@ export function getFastifyServer(): FastifyInstance {
         .withTypeProvider<TypeBoxTypeProvider>();
 
         return app
-        .register(fastifyPlugin(Controller.healthCheckRouter));
+        .register(fastifyPlugin(Controller.healthCheckRouter))
+        .register(fastifyPlugin(Controller.bantecControllerRoutes));
 }
