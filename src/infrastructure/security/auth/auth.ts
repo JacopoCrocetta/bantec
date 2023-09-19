@@ -3,9 +3,11 @@ import { HeaderAPIKeyStrategy } from "passport-headerapikey";
 import { fastifyPlugin } from "fastify-plugin";
 import { FastifyInstance, FastifyPluginOptions } from "fastify";
 
-export async function auth(fastify: FastifyInstance, options: FastifyPluginOptions) {
+export async function auth(
+  fastify: FastifyInstance,
+  options: FastifyPluginOptions
+) {
   passport.registerUserSerializer(async (apiKeys, request) => user);
-
 
   const apiKeys = {
     ca03na188ame03u1d78620de67282882a84: "cep-triggers",
@@ -21,13 +23,11 @@ export async function auth(fastify: FastifyInstance, options: FastifyPluginOptio
       false,
       function (apikey, done) {
         if (apikey in apiKeys) {
-          
           done(null, apiKeys);
         } else {
-          done( Error("invalid key"));
+          done(Error("invalid key"));
         }
 
-        
         return done;
       }
     )

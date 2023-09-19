@@ -8,4 +8,24 @@ export class Account {
     public createdAt: Date,
     public deletedAt
   ) {}
+
+  static initialize({
+    id,
+    balance,
+    accountStatus,
+    accountType,
+    currency,
+    createdAt,
+    deletedAt,
+  }): Account {
+    return new Account(
+      id,
+      balance,
+      accountStatus,
+      accountType,
+      currency,
+      createdAt,
+      deletedAt
+    );
+  }
 }

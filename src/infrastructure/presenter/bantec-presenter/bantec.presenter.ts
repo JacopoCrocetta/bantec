@@ -1,7 +1,1 @@
-
-
-
-
-export default class BantecPresenter{
-    
-}
+export default class BantecPresenter {}

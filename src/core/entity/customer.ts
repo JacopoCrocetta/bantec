@@ -11,19 +11,36 @@ export class Customer {
     public deletedAt
   ) {}
 
-
+  /**
+   * Initialize and return a new Customer
+   *
+   * @param id
+   * @param firstName
+   * @param lastName
+   * @param city
+   * @param mobileNumber
+   * @param panCardNumber
+   * @param dob
+   * @param createdAt
+   * @param deletedAt
+   * 
+   * @returns A new object CUSTOMER
+   *
+   * @beta
+   */
   static initialize({
-     id,
-     firstName,
-     lastName,
-     city,
-     mobileNumber,
-     panCardNumber,
-     dob,
-     createdAt,
-     deletedAt
-  }):Customer{
-    return new Customer(id,
+    id,
+    firstName,
+    lastName,
+    city,
+    mobileNumber,
+    panCardNumber,
+    dob,
+    createdAt,
+    deletedAt,
+  }): Customer {
+    return new Customer(
+      id,
       firstName,
       lastName,
       city,
@@ -31,6 +48,7 @@ export class Customer {
       panCardNumber,
       dob,
       createdAt,
-      deletedAt);
+      deletedAt
+    );
   }
 }

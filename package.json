@@ -23,7 +23,9 @@
     "pg": "^8.11.3"
   },
   "jest": {
-    "modulePaths": ["/shared/vendor/modules"],
+    "modulePaths": [
+      "/shared/vendor/modules"
+    ],
     "moduleFileExtensions": [
       "js",
       "json",
@@ -35,5 +37,8 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "typedoc": "^0.25.1"
   }
 }
