@@ -41,19 +41,4 @@ export interface IConfigFile {
       writeHost?: string;
     };
   };
-  redis: {
-    keyPrefixPermission: string;
-    keyPrefix: string;
-    cacheDisabled: boolean;
-    options: {
-      password: string;
-      name: string;
-      sentinels: [
-        {
-          host: string;
-          port: number;
-        }
-      ];
-    };
-  };
 }
