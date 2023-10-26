@@ -19,10 +19,6 @@ export interface IConfigFile {
       password: string;
       audience: string;
     };
-    productionSoftware: {
-      username: string;
-      password: string;
-    };
   };
   mongo: {
     debug: boolean;
