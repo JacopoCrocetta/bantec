@@ -16,6 +16,7 @@
   "dependencies": {
     "@fastify/passport": "^2.3.0",
     "@fastify/type-provider-typebox": "^3.5.0",
+    "@types/passport": "^1.0.14",
     "dotenv": "^16.3.1",
     "fastify-plugin": "^4.5.1",
     "jest": "^29.6.4",
